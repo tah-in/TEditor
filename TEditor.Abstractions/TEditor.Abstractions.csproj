@@ -45,7 +45,7 @@
     <Folder Include="EditorResources\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EditorResources\editor.html" />
     <EmbeddedResource Include="EditorResources\ZSSRichTextEditor.js" />
+    <EmbeddedResource Include="EditorResources\editor.html" />
   </ItemGroup>
 </Project>

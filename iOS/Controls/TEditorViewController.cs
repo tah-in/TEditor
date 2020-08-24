@@ -81,7 +81,7 @@ namespace TEditor
 			| UIViewAutoresizing.FlexibleBottomMargin;
 			_webView.KeyboardDisplayRequiresUserAction = false;
 			_webView.ScalesPageToFit = true;
-			_webView.BackgroundColor = UIColor.White;
+			_webView.BackgroundColor = UIColor.FromRGB(44, 51, 68);
 			_webView.ScrollView.Bounces = false;
 
 			this.Add (_webView);
