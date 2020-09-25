@@ -6,6 +6,8 @@ using Android.Views;
 using Android.Content;
 using Android.Support.V7.App;
 using TEditor.Abstractions;
+using Android.Views.InputMethods;
+using Android.Graphics;
 
 namespace TEditor
 {
@@ -59,7 +61,7 @@ namespace TEditor
             string htmlString = Intent.GetStringExtra("HTMLString") ?? "<p></p>";
             _editorWebView.SetHTML(htmlString);
 
-            bool autoFocusInput = Intent.GetBooleanExtra("AutoFocusInput", false);
+            bool autoFocusInput = Intent.GetBooleanExtra("AutoFocusInput", true);
             _editorWebView.SetAutoFocusInput(autoFocusInput);
         }
 
@@ -78,6 +80,7 @@ namespace TEditor
             foreach (var item in builder)
             {
                 ImageButton imagebutton = new ImageButton(this);
+                imagebutton.SetBackgroundColor(Color.ParseColor("#3D3F4E")); 
                 imagebutton.Click += (sender, e) =>
                 {
                     item.ClickFunc.Invoke(_editorWebView.RichTextEditor);

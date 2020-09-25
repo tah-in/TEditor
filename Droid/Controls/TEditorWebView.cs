@@ -163,7 +163,7 @@ namespace TEditor
             this.Settings.DomStorageEnabled = true;
 
             string htmlResource = _richTextEditor.LoadResources();
-            this.LoadDataWithBaseURL("http://www.xam-consulting.com", htmlResource, "text/html", "UTF-8", "");
+            this.LoadDataWithBaseURL("https://aycoo.com", htmlResource, "text/html", "UTF-8", "");
         }
 
         public void SetHTML(string html)

@@ -224,7 +224,7 @@ namespace TEditor
 		public void LoadResource ()
 		{
 			string htmlResource = _richTextEditor.LoadResources ();
-			_webView.LoadHtmlString (htmlResource, new Foundation.NSUrl ("www.xam-consulting.com"));
+			_webView.LoadHtmlString (htmlResource, new Foundation.NSUrl ("https://aycoo.com"));
 		}
 
 		public void SetHTML (string html)
